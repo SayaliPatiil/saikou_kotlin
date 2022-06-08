@@ -27,8 +27,10 @@ class FPlayer(override val server: VideoServer) : VideoExtractor() {
                 }?: listOf())
             }
 
-        } catch (e: MismatchedInputException) {}
-        return VideoContainer(listOf())
+        } catch (e: MismatchedInputException) {
+        // throw MyException(e)
+        }
+        
     }
 
     private data class Data(
