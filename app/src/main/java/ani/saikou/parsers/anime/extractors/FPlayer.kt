@@ -28,7 +28,7 @@ class FPlayer(override val server: VideoServer) : VideoExtractor() {
             }
 
         } catch (e: MismatchedInputException) {
-         throw MyException(e)
+        // throw MyException(e)
         }
         
     }
